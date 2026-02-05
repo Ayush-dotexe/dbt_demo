@@ -1,0 +1,6 @@
+groups:
+  - name: Dev
+    owner:
+      # Email is required to receive model-level notifications, additional properties are also allowed.
+      name: "Dev team"
+      email: ayushp249@gmail.com
