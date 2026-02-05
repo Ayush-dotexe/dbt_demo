@@ -13,6 +13,8 @@ models:
 
     - name: my_second_dbt_model
       description: "A starter dbt model"
+      config:
+        group: Dev
       columns:
           - name: id
             description: "The primary key for this table"
