@@ -21,3 +21,11 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: demo
+      description: "demo model"
+      config:
+        group: Dev
+      columns:
+        - name: start_date
+          description: "Should equal current date"
