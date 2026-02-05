@@ -9,8 +9,6 @@
 
 {{ config(materialized='table') }}
 
-{{ validate_valid_db(['raw', 'staging', 'analytics']) }}
-
 with source_data as (
 
     select 1 as id
