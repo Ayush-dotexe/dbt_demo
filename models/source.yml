@@ -4,12 +4,12 @@ sources:
     schema: default
     tables:
       - name: employees_table
-        config:
-          group: Dev
         columns:
           - name: join_date
             tests:
-              - is_today
+              - is_today:
+                  config:
+                    group: Dev
 
       - name: products  
 
