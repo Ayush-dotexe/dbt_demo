@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: workspace
+    schema: default
+    tables:
+      - name: orders
+      - name: customers
+      - name: events

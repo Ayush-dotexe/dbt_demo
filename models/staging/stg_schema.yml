@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Staging orders"
+    columns:
+      - name: order_id
+        description: "Primary order id"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_customers
+    description: "Staging customers"
+    columns:
+      - name: customer_id
+        description: "Customer PK"
+        tests:
+          - not_null
+          - unique

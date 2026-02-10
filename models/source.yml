@@ -1,15 +1,10 @@
+version: 2
+
 sources:
   - name: db
     database: workspace
     schema: default
     tables:
       - name: employees_table
-        columns:
-          - name: join_date
-            tests:
-              - is_today:
-                  config:
-                    group: Dev
-
       - name: products  
 
