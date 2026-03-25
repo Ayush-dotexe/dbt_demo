@@ -6,5 +6,13 @@ sources:
     schema: default
     tables:
       - name: employees_table
-      - name: products  
-
+        config: 
+          freshness:
+            warn_after:
+              count: 1
+              period: day
+            error_after:
+              count: 5
+              period: day
+          loaded_at_field: join_date
+      - name: products
