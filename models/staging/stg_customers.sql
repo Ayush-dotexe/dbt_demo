@@ -18,7 +18,7 @@ full_name as (
 )
 
 select
-  customer_id,
+  customerr_id,
   name,
   created_date
   -- country   -- <- INTENTIONAL: real source has no `country` column; static analysis / LSP should flag this
