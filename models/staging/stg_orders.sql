@@ -13,7 +13,7 @@ with raw_orders as (
 ,normalized as (
     select
       order_id,
-      customerr_id,
+      customer_id,
       amount,
       cast(order_timestamp as timestamp) as order_ts
     from raw_orders
